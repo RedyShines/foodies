@@ -239,7 +239,7 @@ class Menu:
 
     def on_checkoutbtn_pressed(self):
         '''If the user is ready to check out, it will clear their list.'''
-        yn=messagebox.askquestion(title="Are you sure?", message="The total will be $"+MenuItems.cart[2])
+        yn=messagebox.askquestion(title="Are you sure?", message="Are you sure you want to order these?")
         if yn == "yes":
             messagebox.showinfo(title="Thank You", message="Your Order has been completed. Thank you.\nCome back in 15 minutes with your oder number! (39)")
             self.itemlbl.configure(text="")
